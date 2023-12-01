@@ -18,8 +18,8 @@ include '../models/get_transactions.php';
 
 $rol = $_SESSION['user']['role_id'];
 if ($rol === 3) {
-//    header("Location: view_reader.php");
-            echo '<script>window.location.replace("view_reader.php");</script>';
+    header("Location: view_reader.php");
+//            echo '<script>window.location.replace("view_reader.php");</script>';
 
 }
 ?>

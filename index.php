@@ -3,13 +3,13 @@ session_start();
 if (isset($_SESSION['user'])) {
     $rol = $_SESSION['user']['role_id'];
     if ($rol == 1 || $rol == 2) {
-        echo '<script>window.location.replace("app/modules/biblioteca/views/view_admin.php");</script>';
+//        echo '<script>window.location.replace("app/modules/biblioteca/views/view_admin.php");</script>';
 
-//        header("Location: app/modules/biblioteca/views/view_admin.php");
+        header("Location: app/modules/biblioteca/views/view_admin.php");
     } else {
-                echo '<script>window.location.replace("app/modules/biblioteca/views/view_reader.php");</script>';
+//                echo '<script>window.location.replace("app/modules/biblioteca/views/view_reader.php");</script>';
 
-//        header("Location: app/modules/biblioteca/views/view_reader.php");
+        header("Location: app/modules/biblioteca/views/view_reader.php");
     }
     exit;
 }
