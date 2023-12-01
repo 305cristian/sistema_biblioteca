@@ -57,6 +57,27 @@ if (isset($_SESSION['user'])) {
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <span>Usuario Admin</span><br>
+                    <span>user: pcris.994@gmail.com</span><br>
+                    <span>pass: 305.cc</span>
+                </div>
+                <div class="col-md-4">
+                    <span>Usuario Bibliotecario</span><br>
+                    <span>user: victor</span><br>
+                    <span>pass: 1234</span>
+                </div>
+                <div class="col-md-4">
+
+                    <span>Usuario lector</span><br>
+                    <span>user: pao</span><br>
+                    <span>pass: 1234</span>
+                </div>
+            </div>
+        </div>
     </body>
 
     <script src="public/plugins/sweetAlert2_11.js"></script>
