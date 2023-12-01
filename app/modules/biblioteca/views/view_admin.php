@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!--
+<?php
+
 /**
  * Description of view_books
  *
@@ -7,20 +7,19 @@
  * @author CRISTIAN PAZ
  * @date 30 nov. 2023
  * @time 15:08:50
- */       
- 
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
--->
-<?php
+ */    
+
+ /*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
+ */
+
 include '../../../dashboard.php';
-include '../models/get_transactions.php';
+include '../Models/get_transactions.php';
 
 $rol = $_SESSION['user']['role_id'];
 if ($rol === 3) {
     header("Location: view_reader.php");
-//            echo '<script>window.location.replace("view_reader.php");</script>';
-
 }
 ?>
 <head>

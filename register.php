@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<!--
+/**
+ * Description of registerr
+ *
+/**
+ * @author CRISTIAN PAZ
+ * @date 1 dic. 2023
+ * @time 14:29:52
+ */       
+ 
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
+-->
+
+<!DOCTYPE html>
 <html lang="es">
 
     <head>
@@ -17,7 +32,7 @@
                     <div class="form-container">
                         <form id="form" class="registro" method="post" action="./app/Controllers/RegistroController.php">
                             <h1 class="text-center">Formulario de Registro</h1>
-                            <input type="text" name="id_lec" id="id_lec">
+                            <input type="hidden" name="id_lec" id="id_lec">
                             <div class="form-group">
                                 <label for="username">Nombre:</label>
                                 <input type="text" id="nombre" name="nombre" class="form-control">

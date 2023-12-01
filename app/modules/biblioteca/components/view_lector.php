@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<!--
+<?php
 /**
- * Description of view_lector
+ * Description of view_books
  *
-/**
+  /**
  * @author CRISTIAN PAZ
  * @date 30 nov. 2023
- * @time 15:15:54
- */       
- 
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
--->
+ * @time 15:08:50
+ */
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
+ */
 
+include '../../../dashboard.php';
+include '../Models/get_users_all.php';
+
+?>
 <head>
     <title>Registrar Usuario</title>
 </head>
-
-<?php
-include '../../../dashboard.php';
-include '../models/get_users_all.php';
-?>
 
 <section class="p-4 rounded-lg">
     <button class="btn btn-primary" data-toggle="modal" data-target="#modal_lector">Registrar Usuario</button>
@@ -37,9 +35,9 @@ include '../models/get_users_all.php';
             </tr>
         </thead>
         <tbody>
-            <?php
-            foreach ($list_users as $val) {
-                ?>
+<?php
+foreach ($list_users as $val) {
+    ?>
                 <tr>
                     <td><?= $val['id'] ?></td>
                     <td><?= $val['nombres'] ?></td>
@@ -55,7 +53,7 @@ include '../models/get_users_all.php';
                         <button class="btn btn-sm btn-danger" onclick="delete_lector(<?= $val['id'] ?>)"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
-            <?php } ?>
+<?php } ?>
         </tbody>
     </table>
 </section>
@@ -175,7 +173,7 @@ include '../models/get_users_all.php';
 
                             }
                         });
-                    } else  if(data.status.trim() === "warning"){
+                    } else if (data.status.trim() === "warning") {
                         swal.fire({
                             title: 'Atención',
                             icon: 'error',

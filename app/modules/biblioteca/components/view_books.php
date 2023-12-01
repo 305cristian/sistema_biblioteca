@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!--
+<?php
+
 /**
  * Description of view_books
  *
@@ -9,18 +9,17 @@
  * @time 15:08:50
  */       
  
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
--->
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
+ */
 
+include '../../../dashboard.php';
+include '../Models/get_books.php';
+?>
 <head>
     <title>Crear Libro</title>
 </head>
-
-<?php
-include '../../../dashboard.php';
-include '../models/get_books.php';
-?>
 
 <section class="p-4 rounded-lg">
     <button class="btn btn-primary" data-toggle="modal" data-target="#modal_crear">Crear Libro</button>

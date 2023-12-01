@@ -1,11 +1,24 @@
+<?php
+
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ */
+
+/**
+ *
+ * @author CRISTIAN PAZ
+ * @date 1 dic. 2023
+ * @time 14:37:46
+ */
+
+include '../../../dashboard.php';
+include '../Models/get_books_act.php';
+?>
+
 <head>
     <title>Reader</title>
 </head>
-
-<?php
-include '../../../dashboard.php';
-include '../models/get_books_act.php';
-?>
 
 <main>
     <div class="container">

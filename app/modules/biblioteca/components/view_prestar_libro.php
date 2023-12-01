@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<!--
+<?php
 /**
- * Description of view_prestar_libro
+ * Description of view_books
  *
-/**
+  /**
  * @author CRISTIAN PAZ
  * @date 30 nov. 2023
- * @time 15:13:31
- */       
- 
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
--->
+ * @time 15:08:50
+ */
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
+ */
 
+include '../../../dashboard.php';
+include '../Models/get_transactions.php';
+include '../Models/get_books_act.php';
+include '../Models/get_users.php';
+?>
 <head>
     <title>Prestar Libro</title>
 </head>
-
-<?php
-include '../../../dashboard.php';
-include '../models/get_transactions.php';
-include '../models/get_books_act.php';
-include '../models/get_users.php';
-
-?>
 
 <section class="p-4 rounded-lg">
     <button class="btn btn-primary" data-toggle="modal" data-target="#modal_prestar">Prestar Libro</button>

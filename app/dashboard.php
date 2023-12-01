@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<!--
+<?php
 /**
  * Description of view_books
- *
+ 
 /**
  * @author CRISTIAN PAZ
  * @date 30 nov. 2023
  * @time 15:08:50
- */       
+ */     
  
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
--->
-<?php
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
+ */
+
 session_start();
 if (!isset($_SESSION['user'])) {
    header("Location: ../../../../index.php");
-//     echo '<script>window.location.replace("../../../../index.php");</script>';
     exit;
 }
 ?>
